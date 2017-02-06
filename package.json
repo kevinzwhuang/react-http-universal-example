@@ -1,8 +1,6 @@
 {
   "scripts": {
-    "build-server": "webpack --config server-webpack.config.js",
-    "build-client": "webpack --config client-webpack.config.js",
-    "build": "rm -rf ./dist && npm run build-client && npm run build-server"
+    "build": "node_modules/.bin/gulp build"
   },
   "dependencies": {},
   "devDependencies": {
@@ -12,6 +10,7 @@
     "babel-plugin-transform-react-display-name": "^6.22.0",
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-react": "^6.22.0",
+    "gulp": "^3.9.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "webpack": "^2.2.1"
